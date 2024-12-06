@@ -36,7 +36,7 @@ function calculateResults() {
         const row = document.createElement("tr");
         row.innerHTML = `
             <td>${pointName}</td>
-            <td>${distance}m²</td>
+            <td>${distance}m</td>
             <td>${bearingDeg}°</td>
             <td>${x2.toFixed(0)}</td>
             <td>${y2.toFixed(0)}</td>
