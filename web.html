@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance and Bearing Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Distance and Bearing Calculator</h1>
+
+    <label for="start-coordinates">Starting Coordinates (X, Y):</label>
+    <input type="text" id="start-coordinates" placeholder="e.g., 421585, 1502545">
+
+    <label for="input-list">Input List (format: point1 - point2 : distance bearing):</label>
+    <textarea id="input-list" rows="10" placeholder="e.g., tp1 - tp2 : 85 169"></textarea>
+
+    <button onclick="calculateResults()">Calculate</button>
+
+    <table id="results-table">
+        <thead>
+            <tr>
+                <th>Point Name</th>
+                <th>Distance</th>
+                <th>Bearing</th>
+                <th>Endpoint X</th>
+                <th>Endpoint Y</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
